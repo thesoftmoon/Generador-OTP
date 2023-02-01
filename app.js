@@ -1,13 +1,13 @@
 const numbs = document.querySelector('.otp');
 
-function generadorOtp (limite){
+function generadorOtp (){
     const numeros = '0123456789'; 
     let otp = '';
 
-    for(let i = 0; i < limite; i++){
+    for(let i = 0; i < 6; i++){
         otp += numeros[Math.floor(Math.random() * 10)];
     }
-    return otp
+    return numbs.innerHTML = `<h3>${otp}</h3>`;
 }
-//console.log(numbs.classList)
-console.log(generadorOtp(5));
+
+setInterval(generadorOtp, 6000);
