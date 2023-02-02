@@ -1,5 +1,7 @@
 const numbs = document.querySelector('.otp');
 
+const copyBtn = document.querySelector('.clipboard-btn');
+
 function generadorOtp (){
     const numeros = '0123456789'; 
     let otp = '';
@@ -10,4 +12,9 @@ function generadorOtp (){
     return numbs.innerHTML = `<h3>${otp}</h3>`;
 }
 
+copyBtn.addEventListener('click', function (){
+    console.log('presionaste el boton de copiar');
+})
+
+generadorOtp();
 setInterval(generadorOtp, 6000);

@@ -2,6 +2,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.clipboard-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -24,7 +39,9 @@ body {
     text-transform: uppercase;
 }
 
-.otp {
+.otp-container {
+    display: flex;
+    align-items: center;
     background-color: blueviolet;
     padding: 20px 50px;
     border-radius: 20px;
@@ -32,4 +49,8 @@ body {
 
 .otp > h3 {
     letter-spacing: 15px;
+}
+
+.timer-animation {
+    padding: 0 15px;
 }
