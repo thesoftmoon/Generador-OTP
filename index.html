@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador OTP</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -17,14 +18,22 @@
 
             <div class="otp-container">
                 <div class="timer-animation">
-                    <h4>69%</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40px" height="40px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="20" cy="20" r="13" stroke-linecap="round" />
+                </svg>
                 </div>
                 <div class="otp">
                     <h4 class="otp-code">generando codigo</h4>
                 </div>
                 <div class="clipboard-copy">
                     <div class="clipboard-btn">
-                        <span class="material-symbols-outlined md-36">content_copy</span>
+                        <span class="material-icons">content_copy</span>
                     </div>
                 </div>
             </div>

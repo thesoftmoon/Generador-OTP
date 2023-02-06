@@ -2,13 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
 
 .clipboard-btn {
     display: flex;
@@ -16,6 +9,11 @@ body {
     align-items: center;
     cursor: pointer;
     color: azure;
+    font-size: 48px;
+}
+
+.material-icons {
+    font-size: 48px;
 }
 
 
@@ -30,7 +28,7 @@ body {
 .generador-otp {
     text-align: center;
     margin: auto;
-    max-width: 350px;
+    min-width: 350px;
     background-color: azure;
     padding: 50px 100px;
     border-radius: 15px;
@@ -47,6 +45,7 @@ body {
     background-color: blueviolet;
     padding: 20px 50px;
     border-radius: 20px;
+    justify-content: center;
 }
 
 .otp > h3 {
@@ -54,5 +53,33 @@ body {
 }
 
 .timer-animation {
-    padding: 0 15px;
+    /* background-color: brown; */
+    
 }
+
+.timer-animation > svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
+
+circle {
+    fill: none;
+    /* stroke: url(#GradientColor); */
+    stroke: azure;
+    stroke-width: 7px;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: anim 6s linear forwards;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes anim {
+    100% {
+    stroke-dashoffset: 0;
+    }
+    
+}
+

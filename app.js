@@ -37,6 +37,9 @@ navigator.clipboard.writeText("This is the text to be copied").then(() => {
     /* Rejected - text failed to copy to the clipboard */
   });
 
+window.addEventListener('DOMContentLoaded', (event) =>{
+    console.log('cargado...');
+    generadorOtp();
+    setInterval(generadorOtp, 6000);
+})
 
-generadorOtp();
-setInterval(generadorOtp, 6000);
