@@ -1,6 +1,6 @@
 const numbs = document.querySelector('.otp');
-
 const copyBtn = document.querySelector('.clipboard-btn');
+const copyAlert = document.querySelector('.text-copy-alert');
 
 function generadorOtp (){
     const numeros = '0123456789'; 
@@ -25,17 +25,15 @@ const copyCode = async ()=>{
     
 
 copyBtn.addEventListener('click', function (){
-    //copyClipboard()
-    copyCode()
+    copyAlert.classList.add('active-alert');
+    setTimeout(function(){
+        copyAlert.classList.remove('active-alert');
+        console.log('removido');
+    }, 1900);
+    copyCode();
 })
 
-navigator.clipboard.writeText("This is the text to be copied").then(() => {
-    console.log('Content copied to clipboard');
-    /* Resolved - text copied to clipboard successfully */
-  },() => {
-    console.error('Failed to copy');
-    /* Rejected - text failed to copy to the clipboard */
-  });
+
 
 window.addEventListener('DOMContentLoaded', (event) =>{
     console.log('cargado...');

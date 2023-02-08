@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins, Helvetica, sans-serif;
+    background-color: #1b1b1b;
 }
 
 
@@ -8,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    color: azure;
+    color: #fff;
     font-size: 48px;
 }
 
@@ -29,7 +32,7 @@ body {
     text-align: center;
     margin: auto;
     min-width: 350px;
-    background-color: azure;
+    background-color: #fff;
     padding: 50px 100px;
     border-radius: 15px;
     box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.134);
@@ -37,19 +40,26 @@ body {
 
 .uppercase {
     text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 
 .otp-container {
     display: flex;
     align-items: center;
-    background-color: blueviolet;
-    padding: 20px 50px;
+    background-color: #777EF3;
+    padding: 15px 30px;
     border-radius: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    min-width: 280px;
+}
+
+.otp {
 }
 
 .otp > h3 {
     letter-spacing: 15px;
+    margin-left: 15px;
 }
 
 .timer-animation {
@@ -61,16 +71,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 15px;
+}
+
+.clipboard-copy {
+    width: 40px;
 }
 
 circle {
     fill: none;
     /* stroke: url(#GradientColor); */
-    stroke: azure;
-    stroke-width: 7px;
-    stroke-dasharray: 80;
-    stroke-dashoffset: 80;
+    stroke: #fff;
+    stroke-width: 5px;
+    stroke-dasharray: 79;
+    stroke-dashoffset: 79;
     animation: anim 6s linear forwards;
     animation-iteration-count: infinite;
     
@@ -81,5 +94,37 @@ circle {
     stroke-dashoffset: 0;
     }
     
+}
+
+.text-copy-alert {
+    position: absolute;
+    animation: alert 2s linear forwards;
+    display: none;
+}
+
+.active-alert {
+    display: block;
+}
+
+@keyframes alert {
+    0% {
+    top: -45px;
+    opacity: 5%;
+    }
+
+    20% {
+        top: 17px;
+        opacity: 100%;
+    }
+    60% {
+        top: 17px;
+        opacity: 100%;
+    }
+
+    100% {
+        top: -45px;
+        opacity: 5%;
+    }
+ 
 }
 
